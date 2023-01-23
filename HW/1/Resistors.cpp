@@ -10,6 +10,6 @@ int main(void)
 	printf("The second has a resistance of %.2f ohms, \n", R2);
 	printf("And the third has a resistance of %.2f ohms. \n", R3);
 	printf("=-=-=-=-=-=-=-= \n", R3);
-	printf("The equivalent resistance of all resistors is %.2f ohms. \n", REQ);
+	printf("The equivalent resistance of all resistors is %.3lf ohms. \n", REQ);
 	return(0);
 }
