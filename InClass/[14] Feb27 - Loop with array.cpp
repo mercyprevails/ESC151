@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int c = 0, k = 0, j = 0, c2 = 0;
+	int c = 0, k = 0, j = 0;
 	double x[20], sum = 0, mean;
 	FILE* DATA;
 	DATA = fopen("data.txt", "r");
@@ -22,12 +22,14 @@ int main()
 		printf("\n   c = %i \n\n", c);
 	}
 	mean = sum / c;
+
+	int c2 = 0;
 	for (j = 0; j <= k; j += 1) {
 		if (x[j] <= mean)
-			if (j < 8)
-			printf("   x[%i] = %.0f\n", j, x[j]);
-			c2++;
-			c2 = (c - 4);
+			if (j < 8) {
+				printf("   x[%i] = %.0f\n", j, x[j]);
+				c2++;
+			}
 	}
 	printf("\n   c < mean = %d \n", c2);
 	printf("\n  The mean is %.2f. \n", mean);
