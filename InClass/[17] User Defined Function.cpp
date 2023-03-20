@@ -17,3 +17,4 @@ void cube(double a, double b)
 		printf("  %5.0f      %5.0f\n", s, s * s * s);
 	}
 }
+
